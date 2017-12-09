@@ -19,14 +19,14 @@
   (testing "nine"
     (is (= 9 (captcha "91212129")))))
 
-(deftest aoc
+(deftest aoc-dave
   (testing "aoc"
     (is (= 1171 (captcha-amir intstream)))))
 
-(deftest aoc-2
-  (testing "aoc-2"
+(deftest aoc-amir
+  (testing "aoc-amir"
     (is (= 1171 (captcha intstream)))))
 
-(deftest edge
-  (testing "edge"
-    (is (= 21 (captcha-amir "712377")))))
+(deftest aoc-john
+  (testing "aoc-john"
+    (is (= 1171 (count-it intstream)))))

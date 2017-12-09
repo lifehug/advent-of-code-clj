@@ -25,3 +25,16 @@
            (filter #(apply = %))
            (map (comp to-digit first))
            (apply +)))
+
+(defn count-it
+  "I don't do a whole lot."
+  [coll]
+  (->>
+    coll
+    (partition 2 1 coll)
+    (reduce
+      (fn [s [a b]]
+        (if (= a b)
+          (+ s (Character/digit a 10))
+          s))
+      0)))
