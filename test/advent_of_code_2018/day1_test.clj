@@ -22,11 +22,3 @@
 (deftest aoc-dave
   (testing "aoc"
     (is (= 1171 (captcha-amir intstream)))))
-
-(deftest aoc-amir
-  (testing "aoc-amir"
-    (is (= 1171 (captcha intstream)))))
-
-(deftest aoc-john
-  (testing "aoc-john"
-    (is (= 1171 (count-it intstream)))))
