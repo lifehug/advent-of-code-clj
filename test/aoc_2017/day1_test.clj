@@ -1,6 +1,6 @@
-(ns advent-of-code-2018.day1-test
+(ns aoc-2017.day1-test
   (:require [clojure.test :refer :all]
-            [advent-of-code-2018.day1 :refer :all]))
+            [aoc-2017.day1 :refer :all]))
 (def intstream (-> "input/day1.txt" slurp))
 
 (deftest first-test

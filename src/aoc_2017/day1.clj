@@ -1,4 +1,4 @@
-(ns advent-of-code-2018.day1
+(ns aoc-2017.day1
   (:require [clojure.string :refer [split]]
             [clojure.tools.trace :refer [trace]]))
 

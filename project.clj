@@ -1,4 +1,4 @@
-(defproject advent-of-code-2018 "0.1.0-SNAPSHOT"
+(defproject aoc-2017 "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
