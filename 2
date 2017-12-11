@@ -1,0 +1,11 @@
+(ns aoc-2017.day3
+  (:require [clojure.string :refer [split]]
+            [clojure.tools.trace :refer [trace]]))
+
+ (defn distance [n]
+  (let [c (-> n Math/sqrt int)
+        u  (* c c)
+        dt (- u c)
+        h (/ c 2)
+        dc (- h dt) ]
+        (+ dc h)))
