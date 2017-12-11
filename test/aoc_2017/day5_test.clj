@@ -7,6 +7,3 @@
 
 (deftest test-passphrasses-count
    (is (= 383 (valid-passes-count passphrases))))
-
-(deftest test-passphrasses-anagram-count
-   (is (= 265 (valid-passes-count-anagram passphrases))))

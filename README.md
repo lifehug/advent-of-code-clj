@@ -1,10 +1,10 @@
-# advent-of-code-2018
+# advent-of-code
 
-A Clojure library designed to ... well, that part is up to you.
+A repository for my Advent of Code subissions 
 
 ## Usage
 
-FIXME
+run tests with `lein test`. 
 
 ## License
 
