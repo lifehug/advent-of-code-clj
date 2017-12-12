@@ -27,7 +27,7 @@
       step'))
 
 (defn next-step-dec [{p :p s :s c :c :as a}]
- (-> 24774780
+ (-> a
      (assoc :s (update-dec' s p))
      (update :p + (get s p))
      (update :c inc)))
