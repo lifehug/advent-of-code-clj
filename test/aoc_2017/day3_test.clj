@@ -4,9 +4,15 @@
 
 (deftest first-test
     (testing "distance"
-      (is (= 475 distance 277678))))
+      (let [ expected [[0 0 0 0 0] [0 5 4 2 0] [0 0 1 1 0] [0 0 0 0 0][0 0 0 0 0]]
+             given [[0 0 0 0 0] [0 0 4 2 0] [0 0 1 1 0] [0 0 0 0 0][0 0 0 0 0]]]
+            (is (= expected (sum-neighbors given [1 1]))))))
 
-(deftest first-test
-    (testing "distance"
-      (is (= 3 3))))
-
+(deftest next-step-test
+    (testing "go down"
+      (let [ given [[0 0 0 0 0] 
+                    [0 5 4 2 0] 
+                    [0 0 1 1 0] 
+                    [0 0 0 0 0] 
+                    [0 0 0 0 0]]]
+            (is (= [1 2] (next-position given [1 1]))))))
