@@ -6,9 +6,7 @@
             [blancas.kern.core :refer :all]
             [blancas.kern.lexer.basic :refer :all]))
 
-(defn mold [b] (->> b (map #(Integer. %))))
-
-(def program (<$> #(->> % (apply str) keyword)(many letter)))
+(def program (<$> #(->> % (apply str) keyword) (many letter)))
 
 (def program-parser
  (bind [ n program 
@@ -33,3 +31,12 @@
 
 (deftest test-parse-list 
   (is (= 1193 (count programs))))
+
+(deftest bottom-test
+  (is (= true (child? :vfosh programs))))
+
+(deftest bottom-test-2
+  (is (= :mwzaxaj (first (bottom programs)))))
+
+;;(deftest bottom-test-2
+;;  (is (= :nope (bottom programs))))
