@@ -21,6 +21,8 @@
     split-lines 
     (map #(value program-parser %))))
 
+(def program-map (reduce (fn [acc [n x l]] (merge acc {n {:weight x :children l}})) {} programs))
+
 (deftest test-parsec
   (let [result (-> programs first)]
           (is (= [:yvpwz 50 nil] result))))
