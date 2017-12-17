@@ -40,5 +40,5 @@
 (deftest bottom-test-2
   (is (= :mwzaxaj (first (bottom programs)))))
 
-;;(deftest bottom-test-2
-;;  (is (= :nope (bottom programs))))
+(deftest aoc-fix
+  (is (= :vrgxe (first (bad-program :mwzaxaj program-map [])))))
